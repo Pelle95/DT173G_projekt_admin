@@ -9,4 +9,5 @@ Det kräver att en användare är inloggad för att kunna utnyttja funktionerna 
 För att logga in på admingränssnittet kan följande inloggninsinformation användas:
 
 Användarnamn: Pelle
+
 Lösenord: admin123pass123
