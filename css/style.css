@@ -1,0 +1,84 @@
+/* Hämtar typsnittet "Ubuntu" */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+/* Återställer margin och padding, samt ändrar typsnitt */
+html {
+    font-family: 'Ubuntu', Arial, Helvetica, sans-serif; 
+    margin: 0;
+    padding: 0;
+}
+/* Typsnitt för knappar */
+input, button { font-family: 'Ubuntu', Arial, Helvetica, sans-serif; }
+/* Centerar innehåll */
+body{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+/* Menyalternativ */
+#main-nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+#main-nav li{
+    display: inline;
+    margin: 0 12px;
+}
+#main-nav a{
+    text-decoration: none;
+    font-size: 26px;
+    color: black;
+}
+#main-nav a:hover{
+    color: red;
+}
+#container{
+    width: 960px;
+    position: relative;
+}
+/* Knapp för att logga ut absolut positionering */
+#logout{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+/* Data som hämtas visas i grids, tre per rad */
+#data{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 40px;
+    font-size: 18px;
+}
+#data .data-field{
+    text-align: center;
+    margin-top: 20px;
+}
+.data-field p{
+    margin: 0;
+    margin-bottom: 8px;
+}
+/* Knappar för ta bort / redigera data */
+button{
+    border: solid 2px black;
+    border-radius: 4px;
+    font-size: 20px;
+    transition: 0.2s ease-in;
+}
+button:hover{
+    color: white;
+    background-color: black;
+}
+/* Form för redigering / lägga till ny data */
+#add-data{
+    margin: 20px 0;
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#add-data input[type=submit]{
+    margin-top: 8px;
+    width: 100%;
+    height: 25px;
+}
